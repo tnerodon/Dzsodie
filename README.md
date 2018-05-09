@@ -8,4 +8,4 @@
 [github page repo](https://github.com/Dzsodie/Dzsodie.github.io.git)
 
 
-[github page repo](https://Dzsodie.github.io.git)
+[github page](https://Dzsodie.github.io.git)
