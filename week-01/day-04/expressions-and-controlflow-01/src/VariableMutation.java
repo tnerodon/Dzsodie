@@ -2,52 +2,33 @@ public class VariableMutation {
     public static void main(String[] args) {
         int a = 3;
         // make it bigger by 10
-
-
+        a = a + 10;
         System.out.println(a);
-
-
-
 
         int b = 100;
         // make it smaller by 7
-
-
+        b = b - 7;
         System.out.println(b);
-
-
-
 
         int c = 44;
         // please double c's value
-
-
+        c = c * 2;
         System.out.println(c);
-
-
-
 
         int d = 125;
         // please divide by 5 d's value
-
-
+        d = d / 5;
         System.out.println(d);
-
-
-
 
         int e = 8;
         // please cube of e's value
-
-
+        e = (int) Math.pow(2, e);
         System.out.println(e);
-
-
-
 
         int f1 = 123;
         int f2 = 345;
         // tell if f1 is bigger than f2 (print as a boolean)
+        if f1 >= f2;
 
 
 
