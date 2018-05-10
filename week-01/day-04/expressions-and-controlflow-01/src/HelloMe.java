@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class HelloMe {
+
+            public static void main(String[] args) {
+                // Modify this program to greet you instead of the World!
+                //Program asks for name
+                Scanner scanner = new Scanner(System.in);
+
+                System.out.println("What is your name?");
+                // The program stops and waits for user input and to press enter
+                String userInput1 = scanner.nextLine();
+
+                // It prints the greeting with the name that was given by the user
+                System.out.println("Hello, " + userInput1 + "!");
+            }
+}
