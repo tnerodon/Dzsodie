@@ -57,10 +57,12 @@ public class VariableMutation {
         int j = 1521;
         // tell if j is dividable by 3 or 5 (print as a boolean)
 
-        boolean (j % 3);
-        boolean  (j % 5);
-        System.out.println("1521 osztható hárommal? " + );
-        System.out.println("1521 osztható öttel? " + );
+        if (((j % 3) == 0)||((j % 5) == 0)){
+            System.out.println(true);
+        }
+        System.out.println(false);
+
+
 
         String k = "Apple";
         //fill the k variable with its content 4 times

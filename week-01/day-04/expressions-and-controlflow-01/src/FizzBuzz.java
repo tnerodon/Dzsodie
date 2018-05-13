@@ -4,6 +4,7 @@ public class FizzBuzz {
     // and for the multiples of five print “Buzz”.
     // For numbers which are multiples of both three and five print “FizzBuzz”.
     public static void main(String[] args) {
+        
 
     }
 }

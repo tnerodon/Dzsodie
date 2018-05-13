@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MultiplicationTable {
     // Create a program that asks for a number and prints the multiplication table with that number
     //
@@ -15,6 +17,13 @@ public class MultiplicationTable {
     // 9 * 15 = 135
     // 10 * 15 = 150
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please, give me a number to multiple!");
+        int numberToMultiple = scanner.nextInt();
+        for (int rows = 1; rows < 11; rows++){
+            System.out.println( rows + " * " + numberToMultiple + " = " + (rows * numberToMultiple));
+        }
+
 
     }
 }

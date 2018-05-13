@@ -36,8 +36,9 @@ public class PartyIndicator{
         if ((ratio <= 0) & (attendantNumber > 20)) {
             System.out.println("Quite cool party!");
         }
-        if (girls <= 0)
+        if (girls <= 0){
             System.out.println("Sausage party");
         }
+
+        }
     }
-}
