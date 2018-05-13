@@ -39,7 +39,7 @@ public class VariableMutation {
 
         int h = 135798745;
         // tell if it has 11 as a divisor (print as a boolean)
-        boolean h1 = (h % 11) < 1;
+        boolean h1 = ((h % 11) < 1);
         System.out.println(h1);
 
         int i1 = 10;

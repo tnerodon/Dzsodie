@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PartyIndicator {
+public class PartyIndicator{
     // Write a program that asks for two numbers
     // Thw first number represents the number of girls that comes to a party, the
     // second the boys
@@ -15,7 +15,6 @@ public class PartyIndicator {
     //
     // It should print: Sausage party
     // If no girls are coming, regardless the count of the people
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -28,17 +27,17 @@ public class PartyIndicator {
         int attendantNumber = (girls + boys);
         int ratio = (girls - boys);
 
-        if (attendantNumber < 20)
+        if (attendantNumber < 20) {
             System.out.println("Average party...");
-
-        if (attendantNumber > 20)
+        }
+        if (attendantNumber > 20) {
             System.out.println("The party is excellent!");
-
-
-        if ((ratio <= 0) & (attendantNumber > 20))
+        }
+        if ((ratio <= 0) & (attendantNumber > 20)) {
             System.out.println("Quite cool party!");
-
+        }
         if (girls <= 0)
             System.out.println("Sausage party");
+        }
     }
 }

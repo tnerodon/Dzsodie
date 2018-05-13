@@ -5,8 +5,8 @@ public class PrintBigger {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please give me two numbers!");
-        double numberOne= scanner.nextDouble();
-        double numberTwo= scanner.nextDouble();
+        double numberOne = scanner.nextDouble();
+        double numberTwo = scanner.nextDouble();
         if (numberOne > numberTwo){
             System.out.println("This is the bigger number: " + numberOne);
         }
