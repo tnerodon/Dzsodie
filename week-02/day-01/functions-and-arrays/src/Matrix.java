@@ -9,4 +9,8 @@ public class Matrix {
   //   0 0 0 1
   //
   // - Print this two dimensional array to the output
+  public static void main(String[] args) {
+
+  }
+
 }
