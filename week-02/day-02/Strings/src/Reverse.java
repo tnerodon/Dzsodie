@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 
 public class Reverse {
   public static void main(String... args){
@@ -9,10 +8,20 @@ public class Reverse {
     // Try to solve this using charAt() first, and optionally anything else after.
 
     //System.out.println(reverse(reversed));
-    ArrayList ordered = new ArrayList();
 
-    for (int i = 0; i < reversed.length(); i++) {
-      System.out.print(reversed.charAt(i));
+      System.out.print(reverse(reversed));
     }
+
+  public static String reverse (String toReverse) {
+    String reversed = "";
+    for (int i = 0; i < toReverse.length(); i++) {
+      char endCharacter = toReverse.charAt(toReverse.length() - i -1);
+      reversed = reversed + endCharacter;
+    }
+    return reversed;
   }
-}
+    }
+
+
+
+
