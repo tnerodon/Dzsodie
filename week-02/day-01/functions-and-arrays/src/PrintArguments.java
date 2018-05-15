@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-//public class PrintArguments {
+public class PrintArguments {
   //  Create the usual class wrapper
 //  and main method on your own.
 
@@ -8,24 +8,26 @@ import java.util.Scanner;
 //   which prints the input String parameters
 // - It can have any number of parameters
 
-// Examples
-// printParams("first")
-// printParams("first", "second")
-// printParams("first", "second", "third", "fourh")
-// ...
-//public static void main(String[] args) {
-  //Scanner scanner = new Scanner(System.in);
-  //String fruitOne = "alma";
- // String fruitsTwo = "korte";
- // String fruitsThree = "barack";
-  //String fruitsFour = "dinnye";
- // String fruits;
- // printParams(fruits);
-  //System.out.println(fruits);
-//}
+  public static void main(String[] args) {
 
- // private static String printParams(fruits) {
- // for
+    String animalOne = "saska, ";
+    String animalTwo = "szocske, ";
+    String animalThree = "bolha, ";
+    String animalFour = "csotany, ";
+    String animalFive = "pok";
 
- // }
-//}
+    printParams(animalOne, animalTwo, animalThree, animalFour, animalFive);
+
+  }
+
+  public static void printParams(String... params) {
+
+    for (String param : params) {
+      System.out.print(param);
+    }
+
+  }
+
+
+
+}
