@@ -1,33 +1,37 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.Scanner;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class FourRectangles {
+public class CenteredBoxes {
   public static void mainDraw(Graphics graphics){
-    // draw four different size and color rectangles.
+    // create a square drawing function that takes 1 parameter:
+    // the square size
+    // and draws a square of that size to the center of the canvas.
+    // draw 3 squares with that function.
     // avoid code duplication.
-    int shape = 4;
-    for (int i = 0; i < shape; i++) {
 
-      int a = ((int) (Math.random()*256));
-      int g = ((int) (Math.random()*256));
-      int b = ((int) (Math.random()*256));
-      int x = ((int) (Math.random()*320));
-      int y = ((int) (Math.random()*320));
-      int x2 = ((int) (Math.random()*320));
-      int y2 = ((int) (Math.random()*320));
-      graphics.setColor(new Color(a, g, b));
-      graphics.drawRect(x, y, x2, y2);
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Please give me the size of the square!");
+    int size = scanner.nextInt();
+    graphics.setColor(Color.BLUE);
+    graphics.drawRect(((320-size)/2), ((320-size)/2), size, size);
 
+    int squares = 3;
+
+    for (int i = 0; i < squares; i++) {
+      int x = ((int) (Math.random()*(320-size)));
+      int y = ((int) (Math.random()*(320-size)));
+      graphics.setColor(Color.RED);
+      graphics.drawRect(x, y, size, size);
     }
-
-
   }
 
   //    Don't touch the code below
   static int WIDTH = 320;
   static int HEIGHT = 343;
+
   public static void main(String[] args) {
     JFrame jFrame = new JFrame("Drawing");
     jFrame.setSize(new Dimension(WIDTH, HEIGHT));
@@ -44,5 +48,4 @@ public class FourRectangles {
 
     }
   }
-
 }
