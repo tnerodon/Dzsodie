@@ -14,10 +14,20 @@ public class GoToCenter {
     Scanner scanner = new Scanner(System.in);
     int a = 3;
     for (int i = 0; i < a; i++) {
-      System.out.println("Please, give me the X coordinate from 320 to 343!");
+      System.out.println("Please, give me the X coordinate from 0 to 320!");
       int x = scanner.nextInt();
-      System.out.println("Please, give me the Y coordinate from 320 to 343!");
+      System.out.println("Please, give me the Y coordinate from 0 to 320!");
       int y = scanner.nextInt();
+
+      drawLines(graphics, x, y);
+    }
+
+  }
+
+  public static void drawLines(Graphics graphics, int x, int y) {
+    graphics.drawLine(x, y, WIDTH / 2, HEIGHT / 2);
+
+  }
       graphics.setColor(Color.GREEN);
       graphics.drawLine(x,y,160,160);
     }
@@ -40,7 +50,7 @@ public class GoToCenter {
     @Override
     protected void paintComponent(Graphics graphics) {
       super.paintComponent(graphics);
-      mainDraw(graphics);
+      GoToCenter.mainDraw(graphics);
     }
   }
 }

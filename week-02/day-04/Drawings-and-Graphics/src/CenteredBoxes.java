@@ -19,14 +19,21 @@ public class CenteredBoxes {
     graphics.drawRect(((320-size)/2), ((320-size)/2), size, size);
 
     int squares = 3;
-
     for (int i = 0; i < squares; i++) {
+      drawSquare(graphics, size);
+    }
+
+
+  }
+
+  public static void drawSquare(Graphics graphics, int size) {
+
       int x = ((int) (Math.random()*(320-size)));
       int y = ((int) (Math.random()*(320-size)));
       graphics.setColor(Color.RED);
       graphics.drawRect(x, y, size, size);
-    }
   }
+
 
   //    Don't touch the code below
   static int WIDTH = 320;
