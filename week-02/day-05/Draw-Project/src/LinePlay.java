@@ -8,11 +8,9 @@ public class LinePlay {
     public static void mainDraw(Graphics graphics) {
       linePlay(graphics);
     }
-
     // Don't touch the code below
     static int WIDTH = 400;
     static int HEIGHT = 400;
-
     public static void main(String[] args) {
       JFrame jFrame = new JFrame("Drawing");
       jFrame.setSize(new Dimension(WIDTH, HEIGHT));
@@ -21,7 +19,6 @@ public class LinePlay {
       jFrame.setLocationRelativeTo(null);
       jFrame.setVisible(true);
     }
-
     static class ImagePanel extends JPanel {
       @Override
       protected void paintComponent(Graphics graphics) {
@@ -29,9 +26,7 @@ public class LinePlay {
         mainDraw(graphics);
       }
     }
-
     public static void linePlay(Graphics graphics) {
-
       graphics.setColor(new Color(41, 191, 185));
       for (int i = 0; i < 20; i++) {
         graphics.drawLine(0, 20 * i, 20 * i, 400);
