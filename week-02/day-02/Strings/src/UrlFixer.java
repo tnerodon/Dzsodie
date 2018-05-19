@@ -7,18 +7,9 @@ public class UrlFixer {
     // Also, the URL is missing a crutial component, find out what it is and insert it too!
     // Try to solve it more than once using different String functions!
 
-    int urlLength = url.length();
-    String ending = "odds";
-    String beginning = "https";
-    String goodFirst = "https:";
-    int replaceFirst = beginning.length();
-    int word = ending.length();
-    int index = urlLength - word;
-    String newUrl = url.substring(0, index);
-    String goodUrl = newUrl.concat(ending);
-    String url2 = goodUrl.substring(replaceFirst);
-    String workingUrl = goodFirst.concat(url2);
+    url = url.replaceFirst("/", ":/");
+    url = url.replace("bots", "odds");
 
-    System.out.println(workingUrl);
+    System.out.println(url);
   }
 }

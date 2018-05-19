@@ -12,9 +12,9 @@ public class ToDoPrint {
     //  - Download games
     //      - Diablo
     ArrayList todo = new ArrayList();
-    todo.add (0, " - Download games\n");
-    todo.add (1, "      - Diablo");
-    todoText = todoText + todo.get(0) + todo.get(1);
-    System.out.println(todoText);
+    todo.add (0, " My todo:\n");
+    todo.add (1, " - Download games\n");
+    todo.add (2, "      - Diablo");
+    System.out.println(todo.get(0) + todoText + todo.get(1) + todo.get(2));
   }
 }

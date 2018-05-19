@@ -10,8 +10,8 @@ public class ElementFinder {
 
   }
 
-  public static String containsSeven(ArrayList<Integer> conseven) {
-    if (conseven.contains(7)) {
+  public static String containsSeven(ArrayList<Integer> arrayList) {
+    if (arrayList.contains(7)) {
       return "Hoorray";
     } else {
       return "Noooooo";

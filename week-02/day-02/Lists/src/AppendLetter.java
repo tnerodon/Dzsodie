@@ -9,11 +9,11 @@ public class AppendLetter {
     System.out.println(appendA(far));
   }
 
-  public static List<String> appendA(List<String> appended) {
-    for (int i = 0; i < appended.size(); i++) {
-      appended.set(i, appended.get(i) + "a");
+  public static List<String> appendA(List<String> far) {
+    for (int i = 0; i < far.size(); i++) {
+      far.set(i, far.get(i) + "a");
     }
-    return appended;
+    return far;
   }
 }
 
